@@ -1,0 +1,36 @@
+/* src/components/Header.css */
+
+.header-container {
+    display: flex; /* Use flexbox layout for header */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between title and nav links */
+    background-color: #4a90e2; /* Header background color */
+    padding: 15px 30px; /* Padding around header */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+  }
+  
+  .header-title {
+    font-size: 2rem; /* Title font size */
+    color: white; /* Title text color */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .nav-links {
+    display: flex; /* Use flexbox for navigation links */
+  }
+  
+  .nav-item {
+    margin-left: 30px; /* Space between links */
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Link text color */
+    font-size: 1.2rem; /* Font size for links */
+    padding: 10px; /* Padding for clickable area */
+    border-radius: 5px; /* Rounded corners for hover effect */
+    transition: background-color .3s ease, color .3s ease; /* Smooth transition for hover effects */
+  }
+  .nav-item:hover{
+    color: black;
+  }
+  .nav-item:hover {
+    background-color: rgba(255,255,255,0.2); /* Light background on hover */
+  }

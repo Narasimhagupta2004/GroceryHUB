@@ -1,0 +1,73 @@
+/* src/components/Cart.css */
+
+.cart-container {
+  max-width: 800px; /* Set a maximum width for the cart */
+  margin: 20px auto; /* Center the cart */
+  padding: 20px;
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background color */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 10px; /* Subtle shadow */
+}
+
+.cart-items {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+}
+
+.cart-item {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  padding: 10px;
+  border-bottom: 1px solid #ddd; /* Divider between items */
+}
+
+.cart-item:last-child {
+  border-bottom: none; /* Remove border from last item */
+}
+
+.cart-item-image {
+  width: 80px; /* Set a fixed width for images */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Space between image and text */
+}
+
+.cart-item-details {
+  flex-grow: 1; /* Allow details to grow and fill space */
+}
+
+/* Styles for quantity controls */
+.quantity-controls {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.quantity-controls button {
+  background-color: #007bff; /* Blue background for buttons */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 5px; /* Space between buttons and quantity display */
+}
+
+.quantity-controls span {
+  margin: 0 10px; /* Space around quantity display */
+}
+
+.remove-button {
+  background-color: #ff4d4d; /* Red background for remove button */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background-color: #ff1a1a; /* Darker red on hover */
+}
+
+.total-price {
+  margin-top: 20px; /* Space above total price */
+  font-size: 1.5rem; /* Larger font size for total price */
+}

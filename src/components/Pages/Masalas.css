@@ -1,0 +1,50 @@
+/* src/components/Pages/Dals.css */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .Home-products {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .Home-products img {
+    width: 100%; /* Ensure images take full width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  .quantity-controls button {
+    margin: 0 5px;
+  }
+  
+.gocart {
+  margin-top: 80px; /* Space above the cart button */
+  margin-bottom: 80px;
+}
+
+.gocart-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #3867d6; /* Button color */
+  border-radius: 5px;
+  text-decoration: none; /* Remove underline from links */
+  transition: background-color .3s ease, transform .2s ease;
+}
+
+.gocart-button:hover {
+  background-color: green; /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}

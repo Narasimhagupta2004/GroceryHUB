@@ -1,0 +1,128 @@
+/* Global Styles */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  --theme-color: #3867d6; /* Blue color for the icons */
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+
+/* Ensure body and html take full height */
+html, body {
+  height: 100%; /* Full height for html and body */
+}
+
+body {
+  display: flex; /* Use flexbox for body */
+  flex-direction: column; /* Stack children vertically */
+}
+
+/* Main content area should grow */
+.main-content {
+  flex: 1; /* Allow main content to grow and fill space */
+}
+
+/* Footer Styles */
+.footer {
+  background: #111;
+  padding: 1rem 3%; /* Further reduced padding */
+  color: #eee;
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); /* Adjusted min width */
+  gap: 0.5rem; /* Further reduced gap */
+}
+
+.footer .box h3 {
+  font-size: 1.6rem; /* Further reduced font size */
+  padding-bottom: 0.5rem; /* Consistent with reduced size */
+  color: #fff;
+}
+
+.footer .box a {
+  display: block;
+  font-size: 1rem; /* Further reduced font size */
+  padding: 0.3rem 0; /* Reduced padding */
+  color: #eee;
+}
+
+.footer .box a i,
+.footer .box a svg {
+  padding-right: 0.4rem; /* Adjusted padding */
+  color: var(--theme-color); /* Make icons blue */
+}
+
+.footer .box a:hover i,
+.footer .box a:hover svg {
+  padding-right: 1rem; /* Adjusted padding */
+  color: #fff; /* Change to white on hover */
+}
+
+.footer .credit {
+  text-align: center;
+  border-top: 0.1rem solid #222;
+  padding: 1rem 0; /* Further reduced padding */
+  margin-top: 0.5rem; /* Reduced margin */
+  font-size: 1.2rem; /* Reduced font size */
+  color: #fff;
+}
+
+.footer .credit span {
+  color: var(--theme-color);
+}
+
+/* Responsive styling */
+@media (max-width: 991px) {
+    .footer {
+        padding: 1rem 2%; /* Further reduced padding */
+    }
+
+    .footer .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); /* Adjusted for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 0.8rem 1.5%; /* Further reduced padding */
+    }
+
+    .footer .box h3 {
+        font-size: 1.4rem; /* Further reduced font size */
+    }
+
+    .footer .box a {
+        font-size: 0.9rem; /* Further reduced font size */
+    }
+
+    .footer .credit {
+        font-size: 1rem; /* Further reduced font size */
+    }
+}
+
+@media (max-width: 450px) {
+    .footer {
+        padding: 0.5rem 1%; /* Further reduced padding */
+    }
+
+    .footer .box h3 {
+        font-size: 1.2rem; /* Further reduced font size */
+    }
+
+    .footer .box a {
+        font-size: 0.8rem; /* Further reduced font size */
+    }
+
+    .footer .credit {
+        font-size: 0.9rem; /* Further reduced font size */
+    }
+}

@@ -1,0 +1,17 @@
+/* layout.css or in your existing global CSS file */
+
+/* Ensure full height for html and body */
+html, body {
+  height: 100%; /* Full height */
+  margin: 0; /* Remove default margin */
+}
+
+.app-container {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+  min-height: 100vh; /* Minimum height of viewport */
+}
+
+.main-content {
+  flex: 1; /* Allow main content to grow and fill space */
+}

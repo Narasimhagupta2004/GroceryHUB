@@ -1,0 +1,62 @@
+/* src/components/Header.css */
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 15px 7%;
+    color: white;
+    position: sticky;
+    top: 0; /* Ensure it sticks to the top */
+    z-index: 1000; /* Keep it above other content */
+}
+
+ul {
+    flex: 1;
+    list-style: none;
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+ul li a {
+    color: #3867d6; /* Set text color */
+    text-decoration: none; /* Remove underline */
+}
+
+ul li a:hover {
+    color: white; /* Change text color on hover */
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background: #242424; /* Dark background for search box */
+    padding: 10px 20px;
+    border-radius: 50px; /* Rounded corners */
+}
+
+.search-box input {
+    padding: 6px;
+    background: transparent; /* Transparent background */
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    color: #fff; /* White text color */
+    font-size: 18px; /* Font size for input */
+}
+
+.search-box input::placeholder {
+    color: #fff; /* Placeholder color */
+}
+
+.search-box img {
+    width: 20px; /* Size of the search icon */
+    cursor: pointer; /* Change cursor on hover */
+}

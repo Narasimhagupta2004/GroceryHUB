@@ -1,0 +1,83 @@
+.home-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.category-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.category-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(50% - 20px);
+  height: 300px;
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background color */
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Dark text color */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px; /* Smooth transition for hover effects */
+}
+
+.category-card img {
+  width: 100%; /* Full width for images to fill the card */
+  height: auto; /* Maintain aspect ratio of images */
+  max-height: calc(100% - 40px); /* Ensure image fits within card, leaving space for text */
+  object-fit: cover; /* Crop image to fill the card while maintaining aspect ratio */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px;
+}
+
+.category-card h3 {
+  position: absolute; /* Positioning text on top of the image */
+  bottom: 10px; /* Position from the bottom of the card */
+  left: 10px; /* Position from the left of the card */
+  color: white; /* White text color for contrast against images */
+  background-color: rgba(0,0,0,0.6); /* Semi-transparent background for readability */
+  padding: 5px;
+}
+
+.category-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: rgba(0,0,0,0.2) 0px 4px 10px; /* Shadow effect on hover */
+}
+
+
+.gocart {
+  margin-top: 80px; /* Space above the cart button */
+}
+
+.gocart-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #3867d6; /* Button color */
+  border-radius: 5px;
+  text-decoration: none; /* Remove underline from links */
+  transition: background-color .3s ease, transform .2s ease;
+}
+
+.gocart-button:hover {
+  background-color: green; /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+h1 {
+  font-size: 4.5rem; /* Larger font size for the title */
+}
+
+p {
+  font-size: 1.5rem; /* Slightly larger font size for description */
+}
